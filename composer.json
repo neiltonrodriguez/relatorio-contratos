@@ -1,5 +1,5 @@
 {
-    "name": "neiltonsilva/teste-php-facil-tecnologia",
+    "name": "neiltonsilva/relatorio-contratos",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
