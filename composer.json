@@ -1,0 +1,14 @@
+{
+    "name": "neiltonsilva/teste-php-facil-tecnologia",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Neilton"
+        }
+    ],
+    "require": {}
+}
