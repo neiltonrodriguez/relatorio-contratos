@@ -1,7 +1,7 @@
 # Relatorio Contratos
 
 Projeto de teste para cadastro de contratos, utilizando **PHP puro**, **Composer** e **SQLite** como banco de dados.  
-Estou uma regra dentro do index que permita executar tarefas tanto em modo CLI quanto no navegador e usei o SQLite para persistir os dados.
+Implementei uma regra dentro do index que permita executar tarefas tanto em modo CLI quanto no navegador e usei o SQLite para persistir os dados.
 
 ---
 
@@ -46,6 +46,17 @@ relatorio-contratos/
 ```bash
 composer install
 composer dump-autoload
+```
+
+## Caso o banco não esteja populado
+delete ou renomei o arquivo ./database/contratos.db
+e use os comandos abaixo para criar novamente e popular.
+```
+/// comando para criar o banco no terminal:
+sqlite3 database/contratos.db < sql/create_tables.sql
+
+/// comando para popular o banco terminal:
+sqlite3 database/contratos.db < sql/seed_data.sql
 ```
 
 ## 2 Executando via CLI
